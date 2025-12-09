@@ -6,7 +6,7 @@ export default function Page() {
   const router = useRouter();
 
   // TODO: 之後你可以把 successCount 從 props、URL、context 帶進來
-  const successCount = 3; // 先示意用
+  const successCount = 0; // 先示意用
 
   let title = "";
   let subtitleColor = "";

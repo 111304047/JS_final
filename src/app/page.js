@@ -15,7 +15,7 @@ export default function Home() {
       <main
         className="w-4xl bg-white/40 backdrop-blur-sm rounded-2xl p-8 shadow-xl leading-relaxed text-[#482923] flex flex-col items-center justify-center">
         {/* 標題改成圖片 */}
-        <div className="mb-16">
+        <div className="mb-8">
           <Image
             src="/title.png"
             alt="看不見的保護"
@@ -24,15 +24,15 @@ export default function Home() {
           />
         </div>
 
-        <button onClick={handlePlayClick} className="focus:outline-none">
-          <Image
-            src="/play.png"
-            alt="Play"
-            width={100}
-            height={100}
-            className="hover:scale-105 transition-transform duration-200"
-          />
-        </button>
+        <div className="flex justify-center mt-4">
+          <button
+            onClick={() => router.push("/intro")}
+            className="px-8 py-3 bg-[#A82D2C] text-white font-bold rounded-full shadow-md hover:scale-105 hover:bg-[#8f2524] transition-transform duration-200"
+          >
+            Play →
+          </button>
+        </div>
+
       </main>
     </div>
   );
