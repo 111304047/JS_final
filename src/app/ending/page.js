@@ -6,7 +6,9 @@ export default function Page() {
   const router = useRouter();
 
   // TODO: 之後你可以把 successCount 從 props、URL、context 帶進來
-  const successCount = 0; // 先示意用
+  //目前只有接到第三關而已
+  const searchParams = useSearchParams();
+  const successCount = Number(searchParams.get("success")) || 0;
 
   let title = "";
   let subtitleColor = "";
