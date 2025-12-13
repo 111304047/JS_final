@@ -45,3 +45,32 @@ body {
   animation: popFromTop 0.35s ease-out forwards;
 }
 
+
+@keyframes bounceBack {
+  0% {
+    transform: scale(1.1);
+  }
+  50% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.animate-bounce-back {
+  animation: bounceBack 0.3s ease-out;
+}
+
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-2px); }
+  50% { transform: translateX(2px); }
+  75% { transform: translateX(-2px); }
+  100% { transform: translateX(0); }
+}
+
+.animate-shake {
+  animation: shake 0.4s infinite;
+}
+
